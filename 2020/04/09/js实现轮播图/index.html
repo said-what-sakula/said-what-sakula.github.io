@@ -20,21 +20,21 @@
     <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content="">
-    <meta name="description" content="玩转腾讯课堂腾讯课堂js代码关于的网课平台  腾讯课堂是个不错的选择 腾讯课堂的送花    签到     答题      发言都设计的不错 这里将使用JavaScript自动实现上述功能 这里需要在浏览器网页观看才有效 浏览器的f12键能调出控制台 在console处可以输入下列给出代码 首先的自动送花 12var flower &#x3D; setInterval(function()&amp;#12">
+    <meta name="description" content="轮播图的实现在js中算是一个有点复杂的问题 很多人在学完js之后还是一头雾水  不知道怎么实现轮播图 其实轮播图就是使用for循环   计时器等来改变容器的classname或者ID 使特定ID或者classname呈现出来 这里我将使用HTML代码与js代码来实现一个简单的轮播图 1234567891011121314151617181920212223242526272829303132333">
 <meta property="og:type" content="article">
-<meta property="og:title" content="玩转腾讯课堂">
-<meta property="og:url" content="https://said-what-sakula.github.io/2020/04/07/%E7%8E%A9%E8%BD%AC%E8%85%BE%E8%AE%AF%E8%AF%BE%E5%A0%82/index.html">
+<meta property="og:title" content="js实现轮播图">
+<meta property="og:url" content="https://said-what-sakula.github.io/2020/04/09/js%E5%AE%9E%E7%8E%B0%E8%BD%AE%E6%92%AD%E5%9B%BE/index.html">
 <meta property="og:site_name" content="Sakula&#39;s Studio">
-<meta property="og:description" content="玩转腾讯课堂腾讯课堂js代码关于的网课平台  腾讯课堂是个不错的选择 腾讯课堂的送花    签到     答题      发言都设计的不错 这里将使用JavaScript自动实现上述功能 这里需要在浏览器网页观看才有效 浏览器的f12键能调出控制台 在console处可以输入下列给出代码 首先的自动送花 12var flower &#x3D; setInterval(function()&amp;#12">
+<meta property="og:description" content="轮播图的实现在js中算是一个有点复杂的问题 很多人在学完js之后还是一头雾水  不知道怎么实现轮播图 其实轮播图就是使用for循环   计时器等来改变容器的classname或者ID 使特定ID或者classname呈现出来 这里我将使用HTML代码与js代码来实现一个简单的轮播图 1234567891011121314151617181920212223242526272829303132333">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-04-07T10:21:59.512Z">
-<meta property="article:modified_time" content="2020-04-07T10:21:39.102Z">
+<meta property="article:published_time" content="2020-04-09T09:39:20.703Z">
+<meta property="article:modified_time" content="2020-04-09T09:39:07.641Z">
 <meta property="article:author" content="Sakula">
 <meta name="twitter:card" content="summary">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     
-    <title>玩转腾讯课堂 · Sakula&#39;s Studio</title>
+    <title>js实现轮播图 · Sakula&#39;s Studio</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -229,7 +229,7 @@
                 <a href="/" >Sakula&#39;s Studio.</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">玩转腾讯课堂</a>
+                <a href="#" class="post-name">js实现轮播图</a>
             </div>
     </div>
     
@@ -259,7 +259,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            玩转腾讯课堂
+            js实现轮播图
             <!-- 404 -->
             
         </h1>
@@ -278,12 +278,12 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">495</span>Reading time: <span class="post-count reading-time">2 min</span></span>
+                        <span>Word count: <span class="post-count word-count">1.2k</span>Reading time: <span class="post-count reading-time">6 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2020/04/07</span>
+                    <span class="post-intro-time">2020/04/09</span>
                     
                     <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                         <span class="iconfont-archer">&#xe602;</span>
@@ -407,56 +407,25 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <hr>
-<h2 id="玩转腾讯课堂"><a href="#玩转腾讯课堂" class="headerlink" title="玩转腾讯课堂"></a>玩转腾讯课堂</h2><h2 id="腾讯课堂js代码"><a href="#腾讯课堂js代码" class="headerlink" title="腾讯课堂js代码"></a>腾讯课堂js代码</h2><p>关于的网课平台  腾讯课堂是个不错的选择</p>
-<p>腾讯课堂的送花    签到     答题      发言都设计的不错</p>
-<p>这里将使用JavaScript自动实现上述功能</p>
-<p>这里需要在浏览器网页观看才有效</p>
-<p>浏览器的f12键能调出控制台</p>
-<p>在console处可以输入下列给出代码</p>
-<p>首先的自动送花</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var flower &#x3D; setInterval(function()&#123;</span><br><span class="line"> document.getElementsByClassName(&quot;toolbar-icon&quot;)[2].click();&#125;,1000);</span><br></pre></td></tr></table></figure>
+        <p>轮播图的实现在js中算是一个有点复杂的问题</p>
+<p>很多人在学完js之后还是一头雾水  不知道怎么实现轮播图</p>
+<p>其实轮播图就是使用for循环   计时器等来改变容器的classname或者ID</p>
+<p>使特定ID或者classname呈现出来</p>
+<p>这里我将使用HTML代码与js代码来实现一个简单的轮播图</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang&#x3D;&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;动态轮播&lt;&#x2F;title&gt;</span><br><span class="line">    &lt;style&gt;</span><br><span class="line">        #wrapper &#123;</span><br><span class="line">            width: 550px;</span><br><span class="line">            height: 300px;</span><br><span class="line">            position: relative;</span><br><span class="line">            margin: 300px auto;</span><br><span class="line">            cursor:pointer;</span><br><span class="line">        &#125;</span><br><span class="line">        #wrapper:hover .btn&#123;</span><br><span class="line"></span><br><span class="line">            opacity: 1;</span><br><span class="line">            transition: all 0.6s;</span><br><span class="line">        &#125;</span><br><span class="line">        img &#123;</span><br><span class="line">            position: absolute;</span><br><span class="line">            width: 550px;</span><br><span class="line">            height: 300px;</span><br><span class="line">            opacity:0;</span><br><span class="line">            transition: all 0.8s;</span><br><span class="line">        &#125;</span><br><span class="line">        .btn &#123;</span><br><span class="line">            position: absolute;</span><br><span class="line">            top: 135px;</span><br><span class="line">            background: none;</span><br><span class="line">            border: none;</span><br><span class="line"></span><br><span class="line">            opacity: 0;</span><br><span class="line">        &#125;</span><br><span class="line">        .btn img&#123;</span><br><span class="line">            width: 50px;</span><br><span class="line">            height: 50px;</span><br><span class="line">            opacity:0.7;</span><br><span class="line">            z-index: 100;</span><br><span class="line">        &#125;</span><br><span class="line">        #btnLeft &#123;</span><br><span class="line">            left: 10px;</span><br><span class="line">        &#125;</span><br><span class="line">        #btnRight &#123;</span><br><span class="line">            right:60px;</span><br><span class="line">        &#125;</span><br><span class="line">        .pic.active&#123;</span><br><span class="line">            z-index: 100;</span><br><span class="line">            opacity: 1;</span><br><span class="line">        &#125;</span><br><span class="line">        .point &#123;</span><br><span class="line">            list-style: none;</span><br><span class="line">            position: absolute;</span><br><span class="line">            right: 20px;</span><br><span class="line">            bottom: 15px;</span><br><span class="line">            z-index: 300;</span><br><span class="line">            margin-bottom: 0;</span><br><span class="line">        &#125;</span><br><span class="line">        .pot &#123;</span><br><span class="line">            margin-left: 12px;</span><br><span class="line">            width: 8px;</span><br><span class="line">            height: 8px;</span><br><span class="line">            border: 2px solid rgba(255,255,255,0.8);</span><br><span class="line">            float: left;</span><br><span class="line">            border-radius: 100%;</span><br><span class="line">            background-color: rgba(0,0,0,0.4);</span><br><span class="line">        &#125;</span><br><span class="line">        .pot.active &#123;</span><br><span class="line">           background-color: rgba(243,149,176,1);</span><br><span class="line">        &#125;</span><br><span class="line">    &lt;&#x2F;style&gt;</span><br><span class="line">&lt;&#x2F;head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div id&#x3D;&quot;wrapper&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;img&#x2F;1.jpg&quot; alt&#x3D;&quot;&quot; class&#x3D;&quot;pic active&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;img&#x2F;2.jpg&quot; alt&#x3D;&quot;&quot; class&#x3D;&quot;pic&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;img&#x2F;3.jpg&quot; alt&#x3D;&quot;&quot; class&#x3D;&quot;pic&quot;&gt;</span><br><span class="line">        &lt;img src&#x3D;&quot;img&#x2F;4.jpg&quot; alt&#x3D;&quot;&quot; class&#x3D;&quot;pic&quot;&gt;</span><br><span class="line">        &lt;ul class&#x3D;&quot;point&quot;&gt;</span><br><span class="line">            &lt;li class&#x3D;&quot;pot active&quot; arr&#x3D;&quot;0&quot;&gt;&lt;&#x2F;li&gt;</span><br><span class="line">            &lt;li class&#x3D;&quot;pot&quot; arr&#x3D;&quot;1&quot;&gt;&lt;&#x2F;li&gt;</span><br><span class="line">            &lt;li class&#x3D;&quot;pot&quot; arr&#x3D;&quot;2&quot;&gt;&lt;&#x2F;li&gt;</span><br><span class="line">            &lt;li class&#x3D;&quot;pot&quot; arr&#x3D;&quot;3&quot;&gt;&lt;&#x2F;li&gt;</span><br><span class="line">        &lt;&#x2F;ul&gt;</span><br><span class="line">        &lt;buttom class&#x3D;&quot;btn&quot; id&#x3D;&quot;btnLeft&quot;&gt;&lt;img src&#x3D;&quot;img&#x2F;a1.png&quot; alt&#x3D;&quot;&quot;&gt;&lt;&#x2F;buttom&gt;</span><br><span class="line">        &lt;buttom class&#x3D;&quot;btn&quot; id&#x3D;&quot;btnRight&quot;&gt;&lt;img src&#x3D;&quot;img&#x2F;a2.png&quot; alt&#x3D;&quot;&quot;&gt;&lt;&#x2F;buttom&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">let pics &#x3D; document.getElementsByClassName(&#39;pic&#39;);</span><br><span class="line">let btnL &#x3D; document.getElementById(&#39;btnLeft&#39;);</span><br><span class="line">let btnR &#x3D; document.getElementById(&#39;btnRight&#39;);</span><br><span class="line">let points &#x3D; document.getElementsByClassName(&#39;pot&#39;);</span><br><span class="line">let swiper &#x3D; document.getElementById(&#39;wrapper&#39;);</span><br><span class="line">&#x2F;&#x2F;index表示第几张图片在展示</span><br><span class="line">let index &#x3D; 0;</span><br><span class="line">&#x2F;&#x2F;存储时间</span><br><span class="line">let time &#x3D; null;</span><br><span class="line">let clearPics &#x3D; ()&#x3D;&gt; &#123;</span><br><span class="line">    &#x2F;&#x2F;全部去掉active类名</span><br><span class="line">    for (let i &#x3D;0; i&lt;pics.length; i++)&#123;</span><br><span class="line">        pics[i].className &#x3D; &quot;pic&quot;</span><br><span class="line">    &#125;</span><br><span class="line">    for (let i &#x3D;0; i&lt;points.length; i++)&#123;</span><br><span class="line">        points[i].className &#x3D; &quot;pot&quot;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">let update &#x3D; ()&#x3D;&gt; &#123;</span><br><span class="line">    clearPics();</span><br><span class="line">    &#x2F;&#x2F;，第index张图片有active类名</span><br><span class="line">    pics[index].className &#x3D; &quot;pic active&quot;;</span><br><span class="line">    points[index].className &#x3D; &quot;pot active&quot;;</span><br><span class="line">&#125;;</span><br><span class="line">&#x2F;&#x2F;声明一个变量，每当执行一次btnNext函数变切换下一张图片并且添加active类名，当图片是最后一张时，下次切换回到初始图片</span><br><span class="line">let btnNext &#x3D; ()&#x3D;&gt; &#123;</span><br><span class="line">  index ++;</span><br><span class="line">  if(index &#x3D;&#x3D;&#x3D; 4)&#123;</span><br><span class="line">      index &#x3D; 0;</span><br><span class="line">  &#125;</span><br><span class="line">  &#x2F;&#x2F;执行update()方法给图片添加active类名</span><br><span class="line">  update();</span><br><span class="line">&#125;;</span><br><span class="line">&#x2F;&#x2F;声明一个变量，每当执行一次btnText函数变切换上一张图片并且添加active类名，当图片是最后一张时，下次切换回到初始图片</span><br><span class="line">let btnText &#x3D; ()&#x3D;&gt; &#123;</span><br><span class="line">    if (index &#x3D;&#x3D;&#x3D; 0)&#123;</span><br><span class="line">        index &#x3D; 3</span><br><span class="line">    &#125;else &#123;</span><br><span class="line">        index --;</span><br><span class="line">    &#125;</span><br><span class="line">    &#x2F;&#x2F;执行update()方法给图片添加active类名</span><br><span class="line">    update();</span><br><span class="line">&#125;;</span><br><span class="line">&#x2F;&#x2F;默认开启定时器每一秒钟切换下一张图片</span><br><span class="line">time&#x3D;setInterval( ()&#x3D;&gt; &#123;</span><br><span class="line">    btnNext();</span><br><span class="line">&#125;,1000);</span><br><span class="line">&#x2F;&#x2F;鼠标移入图片关闭定时器</span><br><span class="line">swiper.onmouseover &#x3D;  ()&#x3D;&gt; &#123;</span><br><span class="line">    clearInterval(time);</span><br><span class="line">&#125;;</span><br><span class="line">&#x2F;&#x2F;鼠标移出图片开启定时器，继续执行默认操作</span><br><span class="line">swiper.onmouseout &#x3D; ()&#x3D;&gt; &#123;</span><br><span class="line">    time&#x3D;setInterval( ()&#x3D;&gt; &#123;</span><br><span class="line">        btnNext();</span><br><span class="line">    &#125;,1000);</span><br><span class="line">&#125;;</span><br><span class="line">&#x2F;&#x2F;给右键按钮添加点击事件，每点击调用一次btnNext()函数</span><br><span class="line">btnR.addEventListener(&#39;click&#39;, ()&#x3D;&gt; &#123;</span><br><span class="line">    btnNext();</span><br><span class="line">&#125;);</span><br><span class="line">&#x2F;&#x2F;给左键按钮添加点击事件，每点击调用一次btnText()函数</span><br><span class="line">btnL.addEventListener(&#39;click&#39;,()&#x3D;&gt; &#123;</span><br><span class="line">    btnText();</span><br><span class="line">&#125;);</span><br><span class="line">&#x2F;&#x2F;先遍历所有的点给一个点添加点击事件</span><br><span class="line">for (let i&#x3D;0; i&lt;points.length; i++)&#123;</span><br><span class="line">    points[i].addEventListener(&#39;click&#39;, function() &#123;</span><br><span class="line">        &#x2F;&#x2F;声明一个变量用来存储当前的点是哪一位(在html里面给标签存入了数据)</span><br><span class="line">        let opt &#x3D; this.getAttribute(&#39;arr&#39;);</span><br><span class="line">        &#x2F;&#x2F;让把当前点击的点值跟index相等，这样就是保证当点击点的时候跳转到对应的图片</span><br><span class="line">        index &#x3D; opt;</span><br><span class="line">        update();</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br><span class="line">&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
 
-<p>原理是选中送花后  采用计时器   每1000毫秒可以自动点击送花</p>
-<p>当然   这个时间可以由你决定</p>
-<p>自动发言</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var say &#x3D; setInterval(function()&#123;</span><br><span class="line"> document.getElementsByClassName(&quot;ql-editor ql-blank&quot;)[0].getElementsByTagName(&#39;p&#39;)[0].innerHTML &#x3D; &quot;嗯嗯&quot;;</span><br><span class="line">&#125;,1000);</span><br><span class="line">var ok &#x3D; setInterval(function()&#123;</span><br><span class="line"> document.getElementsByClassName(&quot;im-btn text-editor-btn btn-default btn-s&quot;)[0].click();</span><br><span class="line">&#125;,1000);</span><br></pre></td></tr></table></figure>
-
-<p>原理同上</p>
-<p>message函数是自动在对话框输入   其中文本可以自己由想实现的替换掉嗯嗯</p>
-<p>后面时间参数可以自定义</p>
-<p>自动签到</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var come &#x3D; setInterval(function()&#123;</span><br><span class="line"> 	if(document.getElementsByClassName(&quot;s-btn s-btn--primary s-btn--m&quot;).length &gt; 0)&#123;</span><br><span class="line">  	document.getElementsByClassName(&quot;s-btn s-btn--primary s-btn--m&quot;)[0].click();&#125;</span><br><span class="line"> &#125;,1000);</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-<p>自动答题</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var answer &#x3D; setInterval(function()&#123;</span><br><span class="line">  document.getElementsByClassName(&quot;icon-css-rc icon-css-radio item-icon&quot;)[0].click();</span><br><span class="line"> &#125;,3000);</span><br><span class="line">var answer2 &#x3D; setInterval(function()&#123;</span><br><span class="line">  document.getElementsByClassName(&quot;s-btn s-btn--primary s-btn--m&quot;)[0].click();</span><br><span class="line"> &#125;,5000);</span><br></pre></td></tr></table></figure>
-
-
-
-<p>​    其中  answer函数为自动选择选项</p>
-<p>​    [0]为 A    同理   [1]:B  [2]: C  [3]: D  </p>
-<p>​    3000为选中时间</p>
-<p>​    answer2函数为确认   时间设定为5000毫秒</p>
-<p>​    给了2秒钟时间可以自己改问题选项</p>
-<p>应该也有很多人和我一样讨厌是不是飘过的xxx正在观看直播吧</p>
-<p>你需要在console处输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">marquee.style.display&#x3D;&quot;none&quot;;</span><br></pre></td></tr></table></figure>
-
-<p>然后滚动的水印就会消失</p>
-<p>最后：如果你在看的过程中   不想用这些功能了     直接刷新就能恢复</p>
+<p>以上为html与js的代码  由于轮播图设计的比较简单</p>
+<p>css就直接写在了head中</p>
+<p>本次变量推荐使用ES6语法 使用起来会非常方便</p>
 
     </article>
     <!-- license  -->
     
         <div class="license-wrapper">
             <p>Author：<a href="https://said-what-sakula.github.io">Sakula</a>
-            <p>原文链接：<a href="https://said-what-sakula.github.io/2020/04/07/%E7%8E%A9%E8%BD%AC%E8%85%BE%E8%AE%AF%E8%AF%BE%E5%A0%82/">https://said-what-sakula.github.io/2020/04/07/%E7%8E%A9%E8%BD%AC%E8%85%BE%E8%AE%AF%E8%AF%BE%E5%A0%82/</a>
-            <p>发表日期：<a href="https://said-what-sakula.github.io/2020/04/07/%E7%8E%A9%E8%BD%AC%E8%85%BE%E8%AE%AF%E8%AF%BE%E5%A0%82/">April 7th 2020, 6:21:59 pm</a>
-            <p>更新日期：<a href="https://said-what-sakula.github.io/2020/04/07/%E7%8E%A9%E8%BD%AC%E8%85%BE%E8%AE%AF%E8%AF%BE%E5%A0%82/">April 7th 2020, 6:21:39 pm</a>
+            <p>原文链接：<a href="https://said-what-sakula.github.io/2020/04/09/js%E5%AE%9E%E7%8E%B0%E8%BD%AE%E6%92%AD%E5%9B%BE/">https://said-what-sakula.github.io/2020/04/09/js%E5%AE%9E%E7%8E%B0%E8%BD%AE%E6%92%AD%E5%9B%BE/</a>
+            <p>发表日期：<a href="https://said-what-sakula.github.io/2020/04/09/js%E5%AE%9E%E7%8E%B0%E8%BD%AE%E6%92%AD%E5%9B%BE/">April 9th 2020, 5:39:20 pm</a>
+            <p>更新日期：<a href="https://said-what-sakula.github.io/2020/04/09/js%E5%AE%9E%E7%8E%B0%E8%BD%AE%E6%92%AD%E5%9B%BE/">April 9th 2020, 5:39:07 pm</a>
             <p>版权声明：本文采用<a rel="license noopener" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -464,17 +433,12 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href= "/2020/04/09/js%E5%AE%9E%E7%8E%B0%E8%BD%AE%E6%92%AD%E5%9B%BE/" title= "js实现轮播图">
-                    <div class="nextTitle">js实现轮播图</div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href= "/2020/04/07/%E9%9D%92%E5%B9%B4%E5%A4%A7%E5%AD%A6%E4%B9%A0/" title= "青年大学习">
-                    <div class="prevTitle">青年大学习</div>
+                <a href= "/2020/04/07/%E7%8E%A9%E8%BD%AC%E8%85%BE%E8%AE%AF%E8%AF%BE%E5%A0%82/" title= "玩转腾讯课堂">
+                    <div class="prevTitle">玩转腾讯课堂</div>
                 </a>
             
         </li>
@@ -597,7 +561,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#玩转腾讯课堂"><span class="toc-number">1.</span> <span class="toc-text">玩转腾讯课堂</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#腾讯课堂js代码"><span class="toc-number">2.</span> <span class="toc-text">腾讯课堂js代码</span></a></li></ol>
+        
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
