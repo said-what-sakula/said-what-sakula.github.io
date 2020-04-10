@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- title -->
+
+
+
+
+<!-- keywords -->
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
+    <meta name="author" content="Sakula">
+    <meta name="renderer" content="webkit">
+    <meta name="copyright" content="Sakula">
+    
+    <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
+    
+    <meta name="description" content="">
+    <meta name="description" content="利用HTML写GitHub今天经一位朋友的告诉   我才了解到可以利用HTML来写md文件实现写blog的方式 但是如果不是前端开发者   就对HTML写的方法很陌生 我将用一些简单的HTML语言来说明一下怎么写 首先 HTML语言分为很多标签 一到五级标题分别为…. 注意其中一级标题只能出现一次 然后就是标签是普通文本 标签是超链接 下面来介绍怎么更改样式 利用的是css 由于md文件配置的c">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML写md文件">
+<meta property="og:url" content="https://said-what-sakula.github.io/2020/04/10/HTML%E5%86%99md%E6%96%87%E4%BB%B6/index.html">
+<meta property="og:site_name" content="Sakula&#39;s Studio">
+<meta property="og:description" content="利用HTML写GitHub今天经一位朋友的告诉   我才了解到可以利用HTML来写md文件实现写blog的方式 但是如果不是前端开发者   就对HTML写的方法很陌生 我将用一些简单的HTML语言来说明一下怎么写 首先 HTML语言分为很多标签 一到五级标题分别为…. 注意其中一级标题只能出现一次 然后就是标签是普通文本 标签是超链接 下面来介绍怎么更改样式 利用的是css 由于md文件配置的c">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%5CVSMP_%7B(N%9)SW1PU%60%5DKF~XG.png">
+<meta property="og:image" content="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%5CQ%5BC6B7U03GL%5B1VD7%W@TTDM.png">
+<meta property="og:image" content="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%60C7IWH(T)4IZ_JPIL~A9%7DHR.png">
+<meta property="og:image" content="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%5C7DDC%7DTBLL_YW%5BQ_L97XBX%K.png">
+<meta property="og:image" content="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%60TZQ%60$()ZJC%5D97QD5LKLLMD.png">
+<meta property="og:image" content="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C$_%5D~">
+<meta property="og:image" content="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%5C8D~O">
+<meta property="og:image" content="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%5CY16FZ4T%607P$J(VE~HYG_ZJS.png">
+<meta property="og:image" content="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C(%5GRG%5B11(6E(93SLEV3WCM.png">
+<meta property="og:image" content="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%5C5ZD0612~WEG8_%605MSY4_(P8.png">
+<meta property="og:image" content="file:///C:%5CUsers%5C25457%5CAppData%5CRoaming%5CTencent%5CUsers%5C2545793432%5CQQ%5CWinTemp%5CRichOle%5C562BVZAFPYWOKI%7BL%5DS%5D%5DJ1Z.png">
+<meta property="og:image" content="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%5CI~%5B0Z0_@XL6V%7DE%5BM%5B%7DAZM%D.png">
+<meta property="og:image" content="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%5C1QJC9KA5CD85LIFP$RI%KVK.png">
+<meta property="og:image" content="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%7BIL%TS$KXMTBKA$XB%5DF6$HU.png">
+<meta property="og:image" content="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%5CB8KKU9G%7DL2CKJ8">
+<meta property="og:image" content="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C_D58P9X$1RGH%W721T9~JBA.png">
+<meta property="og:image" content="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%60%7BAS86W@">
+<meta property="og:image" content="file:///C:%5CUsers%5C25457%5CAppData%5CRoaming%5CTencent%5CUsers%5C2545793432%5CQQ%5CWinTemp%5CRichOle%5CK7%5BM204WH(UC~((J%5BK7$J3R.png">
+<meta property="og:image" content="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%7DK%L">
+<meta property="og:image" content="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C_O%7D_581V8BB%5B64C3%7D%7D~2$4W.png">
+<meta property="og:image" content="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%5C3%BLFV~_B2T%SPMF36SJ3TR.png">
+<meta property="og:image" content="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%5C74OTX$G0TAH%5D7XI%60X93A_YV.png">
+<meta property="og:image" content="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%5C9A8HIF09@6%60">
+<meta property="og:image" content="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C)$%YKROU9ZOU%5BB21I%60%7DN(ZY.png">
+<meta property="article:published_time" content="2020-04-10T13:19:09.887Z">
+<meta property="article:modified_time" content="2020-04-10T13:18:43.097Z">
+<meta property="article:author" content="Sakula">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%5CVSMP_%7B(N%9)SW1PU%60%5DKF~XG.png">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    
+    <title>HTML写md文件 · Sakula&#39;s Studio</title>
+    <style type="text/css">
+    @font-face {
+        font-family: 'Oswald-Regular';
+        src: url("/font/Oswald-Regular.ttf");
+    }
+
+    body {
+        margin: 0;
+    }
+
+    header,
+    footer,
+    .back-top,
+    .sidebar,
+    .container,
+    .site-intro-meta,
+    .toc-wrapper {
+        display: none;
+    }
+
+    .site-intro {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        /* height: 50vh; */
+        overflow: hidden;
+    }
+
+    .site-intro-placeholder {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        width: calc(100% + 300px);
+        height: 100%;
+        background: repeating-linear-gradient(-45deg, #444 0, #444 80px, #333 80px, #333 160px);
+        background-position: center center;
+        transform: translate3d(-226px, 0, 0);
+        animation: gradient-move 2.5s ease-out 0s infinite;
+    }
+
+    @keyframes gradient-move {
+        0% {
+            transform: translate3d(-226px, 0, 0);
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+</style>
+
+    <link rel="preload" href= "/css/style.css?v=20180824" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="stylesheet" href= "/css/mobile.css?v=20180824" media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    
+    <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+/* This file is meant as a standalone workflow for
+- testing support for link[rel=preload]
+- enabling async CSS loading in browsers that do not support rel=preload
+- applying rel preload css once loaded, whether supported or not.
+*/ -->
+<script>
+(function( w ){
+	"use strict";
+	// rel=preload support test
+	if( !w.loadCSS ){
+		w.loadCSS = function(){};
+	}
+	// define on the loadCSS obj
+	var rp = loadCSS.relpreload = {};
+	// rel=preload feature support test
+	// runs once and returns a function for compat purposes
+	rp.support = (function(){
+		var ret;
+		try {
+			ret = w.document.createElement( "link" ).relList.supports( "preload" );
+		} catch (e) {
+			ret = false;
+		}
+		return function(){
+			return ret;
+		};
+	})();
+
+	// if preload isn't supported, get an asynchronous load by using a non-matching media attribute
+	// then change that media back to its intended value on load
+	rp.bindMediaToggle = function( link ){
+		// remember existing media attr for ultimate state, or default to 'all'
+		var finalMedia = link.media || "all";
+
+		function enableStylesheet(){
+			link.media = finalMedia;
+		}
+
+		// bind load handlers to enable media
+		if( link.addEventListener ){
+			link.addEventListener( "load", enableStylesheet );
+		} else if( link.attachEvent ){
+			link.attachEvent( "onload", enableStylesheet );
+		}
+
+		// Set rel and non-applicable media type to start an async request
+		// note: timeout allows this to happen async to let rendering continue in IE
+		setTimeout(function(){
+			link.rel = "stylesheet";
+			link.media = "only x";
+		});
+		// also enable media after 3 seconds,
+		// which will catch very old browsers (android 2.x, old firefox) that don't support onload on link
+		setTimeout( enableStylesheet, 3000 );
+	};
+
+	// loop through link elements in DOM
+	rp.poly = function(){
+		// double check this to prevent external calls from running
+		if( rp.support() ){
+			return;
+		}
+		var links = w.document.getElementsByTagName( "link" );
+		for( var i = 0; i < links.length; i++ ){
+			var link = links[ i ];
+			// qualify links to those with rel=preload and as=style attrs
+			if( link.rel === "preload" && link.getAttribute( "as" ) === "style" && !link.getAttribute( "data-loadcss" ) ){
+				// prevent rerunning on link
+				link.setAttribute( "data-loadcss", true );
+				// bind listeners to toggle media back
+				rp.bindMediaToggle( link );
+			}
+		}
+	};
+
+	// if unsupported, run the polyfill
+	if( !rp.support() ){
+		// run once at least
+		rp.poly();
+
+		// rerun poly on an interval until onload
+		var run = w.setInterval( rp.poly, 500 );
+		if( w.addEventListener ){
+			w.addEventListener( "load", function(){
+				rp.poly();
+				w.clearInterval( run );
+			} );
+		} else if( w.attachEvent ){
+			w.attachEvent( "onload", function(){
+				rp.poly();
+				w.clearInterval( run );
+			} );
+		}
+	}
+
+
+	// commonjs
+	if( typeof exports !== "undefined" ){
+		exports.loadCSS = loadCSS;
+	}
+	else {
+		w.loadCSS = loadCSS;
+	}
+}( typeof global !== "undefined" ? global : this ) );
+</script>
+
+    <link rel="icon" href= "/assets/favicon.ico" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js" as="script" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" as="script" />
+    <link rel="preload" href="/scripts/main.js" as="script" />
+    <link rel="preload" as="font" href="/font/Oswald-Regular.ttf" crossorigin>
+    <link rel="preload" as="font" href="https://at.alicdn.com/t/font_327081_1dta1rlogw17zaor.woff" crossorigin>
+    
+    <!-- fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" defer></script>
+    <!-- 百度统计  -->
+    
+    <!-- 谷歌统计  -->
+    
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+    
+        <body class="post-body">
+    
+    
+<header class="header">
+
+    <div class="read-progress"></div>
+    <div class="header-sidebar-menu">&#xe775;</div>
+    <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >Sakula&#39;s Studio.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">HTML写md文件</a>
+            </div>
+    </div>
+    
+    <a class="home-link" href=/>Sakula's Studio.</a>
+</header>
+    <div class="wrapper">
+        <div class="site-intro" style="
+
+
+
+
+
+
+
+height:50vh;
+">
+    
+    <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
+            
+    <div class="site-intro-placeholder"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
+    <div class="site-intro-meta">
+        <!-- 标题  -->
+        <h1 class="intro-title">
+            <!-- 主页  -->
+            
+            HTML写md文件
+            <!-- 404 -->
+            
+        </h1>
+        <!-- 副标题 -->
+        <p class="intro-subtitle">
+            <!-- 主页副标题  -->
+            
+            
+            <!-- 404 -->
+            
+        </p>
+        <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                
+                    <div class="post-intro-read">
+                        <span>Word count: <span class="post-count word-count">1.8k</span>Reading time: <span class="post-count reading-time">7 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2020/04/10</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        
+    </div>
+</div>
+        <script>
+ 
+  // get user agent
+  var browser = {
+    versions: function () {
+      var u = window.navigator.userAgent;
+      return {
+        userAgent: u,
+        trident: u.indexOf('Trident') > -1, //IE内核
+        presto: u.indexOf('Presto') > -1, //opera内核
+        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+        iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者安卓QQ浏览器
+        iPad: u.indexOf('iPad') > -1, //是否为iPad
+        webApp: u.indexOf('Safari') == -1, //是否为web应用程序，没有头部与底部
+        weixin: u.indexOf('MicroMessenger') == -1, //是否为微信浏览器
+        uc: u.indexOf('UCBrowser') > -1 //是否为android下的UC浏览器
+      };
+    }()
+  }
+  console.log("userAgent:" + browser.versions.userAgent);
+
+  // callback
+  function fontLoaded() {
+    console.log('font loaded');
+    if (document.getElementsByClassName('site-intro-meta')) {
+      document.getElementsByClassName('intro-title')[0].classList.add('intro-fade-in');
+      document.getElementsByClassName('intro-subtitle')[0].classList.add('intro-fade-in');
+      var postIntros = document.getElementsByClassName('post-intros')[0]
+      if (postIntros) {
+        postIntros.classList.add('post-fade-in');
+      }
+    }
+  }
+
+  // UC不支持跨域，所以直接显示
+  function asyncCb(){
+    if (browser.versions.uc) {
+      console.log("UCBrowser");
+      fontLoaded();
+    } else {
+      WebFont.load({
+        custom: {
+          families: ['Oswald-Regular']
+        },
+        loading: function () {  //所有字体开始加载
+          // console.log('loading');
+        },
+        active: function () {  //所有字体已渲染
+          fontLoaded();
+        },
+        inactive: function () { //字体预加载失败，无效字体或浏览器不支持加载
+          console.log('inactive: timeout');
+          fontLoaded();
+        },
+        timeout: 5000 // Set the timeout to two seconds
+      });
+    }
+  }
+
+  function asyncErr(){
+    console.warn('script load from CDN failed, will load local script')
+  }
+
+  // load webfont-loader async, and add callback function
+  function async(u, cb, err) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (cb) { o.addEventListener('load', function (e) { cb(null, e); }, false); }
+    if (err) { o.addEventListener('error', function (e) { err(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+
+  var asyncLoadWithFallBack = function(arr, success, reject) {
+      var currReject = function(){
+        reject()
+        arr.shift()
+        if(arr.length)
+          async(arr[0], success, currReject)
+        }
+
+      async(arr[0], success, currReject)
+  }
+
+  asyncLoadWithFallBack([
+    "https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js", 
+    "https://cdn.bootcss.com/webfont/1.6.28/webfontloader.js",
+    "/lib/webfontloader.min.js"
+  ], asyncCb, asyncErr)
+</script>        
+        <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
+        <div class="container container-unloaded">
+            <main class="main post-page">
+    <article class="article-entry">
+        <hr>
+<h2 id="利用HTML写GitHub"><a href="#利用HTML写GitHub" class="headerlink" title="利用HTML写GitHub"></a>利用HTML写GitHub</h2><p>今天经一位朋友的告诉   我才了解到可以利用HTML来写md文件实现写blog的方式</p>
+<p>但是如果不是前端开发者   就对HTML写的方法很陌生</p>
+<p>我将用一些简单的HTML语言来说明一下怎么写</p>
+<p>首先 HTML语言分为很多标签</p>
+<p>一到五级标题分别为<h1></h1>….<h2></h2></p>
+<p>注意其中一级标题只能出现一次</p>
+<p>然后就是<p></p>标签是普通文本</p>
+<p><a></a>标签是超链接</p>
+<p>下面来介绍怎么更改样式</p>
+<p>利用的是css</p>
+<p>由于md文件配置的css文件难找到</p>
+<p>加上可能用的是less等轻量级语言 对不是前端开发者的编程者是很大的苦难</p>
+<p>这里介绍行间样式 如给一个p标签设置颜色为红色</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p style&#x3D;&quot;color&#x3D;red;&quot;&gt;&lt;&#x2F;p&gt;</span><br></pre></td></tr></table></figure>
+
+<p>所示css是可以写在行间的</p>
+<p>且行间是优先级较高   不用担心优先级问题</p>
+<p>然后就是让人头疼的对齐问题</p>
+<p>水平对齐是</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">text-align:center;</span><br></pre></td></tr></table></figure>
+
+<p>如果你需要的只是文本   就可以手动设置标签的高与行号一致</p>
+<p>例如    这里用p标签来演示</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p style&#x3D;&quot;height&#x3D;14px line-height&#x3D;&quot;&gt;文本&lt;&#x2F;p&gt;</span><br></pre></td></tr></table></figure>
+
+<p>这样就实现了垂直居中</p>
+<p>根据个人需要可改动高度</p>
+<p>类似的这里将介绍一些常用的样式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">字体大小：font-size&#x3D;10px;字体重量：font-weight;字体颜色：color;</span><br></pre></td></tr></table></figure>
+
+<p>对于图片问题   由于大家可能使用媒体查询来实现响应式会毕竟麻烦</p>
+<p>如果大家不建议手机用户下面带来怎么处理元素一些小的位置偏差</p>
+<p>对于图片的契合容器的大小问题</p>
+<p>大家可能都经历过图片太大而导致撑大容器问题</p>
+<p>这里可以设置图片的max-width与max-height</p>
+<p>如果不想出现重复就加no-repeat;</p>
+<p>如果大家想加入图片 又害怕改变了父容器的大小可以在图片外面套一层<div></div></p>
+<p>改变套的div的大小是很好的方法</p>
+<p>还介绍一下两种布局方式 flex布局与grid布局</p>
+<p>注意：grid只实用于新版本的浏览器  低版本浏览器可能出现不兼容</p>
+<p>如何使用这些布局 ?</p>
+<p>只需要在style里面写入   display=””;</p>
+<p>在“”里面写入要使用的布局的名称</p>
+<h2 id="flex布局"><a href="#flex布局" class="headerlink" title="flex布局"></a>flex布局</h2><p>先介绍flex布局：</p>
+<p>有下面这些主要属性</p>
+<ul>
+<li>flex-direction</li>
+<li>flex-wrap</li>
+<li>flex-flow</li>
+<li>justify-content</li>
+<li>align-items</li>
+<li>align-content</li>
+</ul>
+<p>在flex中是使用主轴与交叉轴布局</p>
+<p>默认主轴方向是水平  交叉轴是垂直</p>
+<p>flex-direction:即改变主轴方向   分为 row    row-reverse      column     column-reverse;</p>
+<p><img src="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%5CVSMP_%7B(N%9)SW1PU%60%5DKF~XG.png" alt="img"></p>
+<p><img src="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%5CQ%5BC6B7U03GL%5B1VD7%W@TTDM.png" alt="img"></p>
+<p>接下来是flex-wrap:no-wrap       wrap       wrap-reverse</p>
+<p><img src="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%60C7IWH(T)4IZ_JPIL~A9%7DHR.png" alt="img"></p>
+<p><img src="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%5C7DDC%7DTBLL_YW%5BQ_L97XBX%K.png" alt="img"></p>
+<p><img src="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%60TZQ%60$()ZJC%5D97QD5LKLLMD.png" alt="img"></p>
+<p>​    flex-flow是flex-direction与flex-wrap的简写   默认为row  no-wrap；</p>
+<p>下面是justify-content属性</p>
+<p>决定了主轴对称方式       flex-start    flex-end    center     space-between    space-around</p>
+<p><img src="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C$_%5D~" alt="img">)F(}1_AJ2W]]MXR8NK0.png)</p>
+<p><img src="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%5C8D~O" alt="img">)WSAAVP}2{WSG7Y59JR.png)</p>
+<p><img src="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%5CY16FZ4T%607P$J(VE~HYG_ZJS.png" alt="img"></p>
+<p><img src="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C(%5GRG%5B11(6E(93SLEV3WCM.png" alt="img"></p>
+<p><img src="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%5C5ZD0612~WEG8_%605MSY4_(P8.png" alt="img"></p>
+<p>align-items属性</p>
+<p>规定了交叉轴对此方式   flex-start   flex-end   center  stretch  baseline</p>
+<p><img src="file:///C:%5CUsers%5C25457%5CAppData%5CRoaming%5CTencent%5CUsers%5C2545793432%5CQQ%5CWinTemp%5CRichOle%5C562BVZAFPYWOKI%7BL%5DS%5D%5DJ1Z.png" alt="img"></p>
+<p><img src="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%5CI~%5B0Z0_@XL6V%7DE%5BM%5B%7DAZM%D.png" alt="img"></p>
+<p><img src="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%5C1QJC9KA5CD85LIFP$RI%KVK.png" alt="img"></p>
+<p><img src="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%7BIL%TS$KXMTBKA$XB%5DF6$HU.png" alt="img"></p>
+<p><img src="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%5CB8KKU9G%7DL2CKJ8" alt="img">)0NL4M0KC.png)</p>
+<p> align-content属性定义多跟轴对齐  如果只有一根轴  则该属性无作用</p>
+<p>然后order：   ；</p>
+<p>规定了排序顺序  数值越小排名越前</p>
+<p>默认为0；</p>
+<p>flex-grow规定放大比例  默认为0</p>
+<p>如果所有项目的flex-grow属性都为1，则它们将等分剩余空间（如果有的话）。如果一个项目的flex-grow属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍。</p>
+<p><img src="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C_D58P9X$1RGH%W721T9~JBA.png" alt="img"></p>
+<p>flex-shrink属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。</p>
+<p><img src="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%60%7BAS86W@" alt="img">)L%[RL]9}A~JT@U.png)</p>
+<p>如果所有项目的flex-shrink属性都为1，当空间不足时，都将等比例缩小。如果一个项目的flex-shrink属性为0，其他项目都为1，则空间不足时，前者不缩小。</p>
+<p>负值对该属性无效。</p>
+<h2 id="grid布局"><a href="#grid布局" class="headerlink" title="grid布局"></a>grid布局</h2><p>grid是最先进的布局，出现没有多久，取代了flex的轴方式 ，能像画方格一样处理布局</p>
+<p>在学习grid布局之前，我们需要了解一些基本概念</p>
+<p>采用网格布局的区域，称为“容器”。容器内部的采用网格定位的子元素称为“项目”</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;wrapper&quot;&gt;</span><br><span class="line">        &lt;div class&#x3D;&quot;item&quot;&gt;1&lt;&#x2F;div&gt;</span><br><span class="line">        &lt;div class&#x3D;&quot;item&quot;&gt;2&lt;&#x2F;div&gt;</span><br><span class="line">        &lt;div class&#x3D;&quot;item&quot;&gt;3&lt;&#x2F;div&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
+
+<p>上面的代码中，wrapper就是容器，item就是项目</p>
+<p>容器里面的水平区域称为“行”，垂直区域称为“列”，行列重叠出来的空间组成单元格</p>
+<p><img src="file:///C:%5CUsers%5C25457%5CAppData%5CRoaming%5CTencent%5CUsers%5C2545793432%5CQQ%5CWinTemp%5CRichOle%5CK7%5BM204WH(UC~((J%5BK7$J3R.png" alt="img"></p>
+<p>display:grid指定一个容器为网格布局;</p>
+<p>grid-template-columns：用来指定行的宽度</p>
+<p>grid-template-rows：用来指定行的高度</p>
+<p>其中指定宽度与高度可以用百分比表示</p>
+<p>例如grid-template-columns: 1fr 1fr  1fr;</p>
+<p>minmax() 产生一个长度范围，表示长度就在这个范围之中，它接受两个参数，分别为最小值和最大值</p>
+<p>(minmax(100px,1fr))表示列宽不小于100px，不大于1fr</p>
+<p>grid-row-gap：设置行与行之间的间隔</p>
+<p>grid-colunm-gap：设置列于列之间的间隔</p>
+<p><img src="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%7DK%L" alt="img">)HSFDEG]$KX%2P3%B[Q.png)</p>
+<p>justify-items属性设置单元格内容的水平位置，align-items设置单元格内容的垂直位置</p>
+<p>这两个属性的取值是完全一样的</p>
+<ul>
+<li>start：对齐单元格的起始边缘。</li>
+<li>end：对齐单元格的结束边缘。</li>
+<li>center：单元格内部居中。</li>
+<li>stretch：拉伸，占满单元格的整个宽度（默认值）</li>
+</ul>
+<p><img src="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C_O%7D_581V8BB%5B64C3%7D%7D~2$4W.png" alt="img"></p>
+<p><img src="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%5C3%BLFV~_B2T%SPMF36SJ3TR.png" alt="img"></p>
+<p><img src="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%5C74OTX$G0TAH%5D7XI%60X93A_YV.png" alt="img"></p>
+<p>justify-content属性是整个内容区域在容器里面的水平位置，align-content属性是整个内容区域在容器里面的垂直位置</p>
+<p>项目的位置是可以指定的，具体方法就是指定项目的边框，分别定位在哪根网格线</p>
+<ul>
+<li><code>grid-column-start</code>属性：左边框所在的垂直网格线</li>
+<li><code>grid-column-end</code>属性：右边框所在的垂直网格线</li>
+<li><code>grid-row-start</code>属性：上边框所在的水平网格线</li>
+<li><code>grid-row-end</code>属性：下边框所在的水平网格线</li>
+</ul>
+<p>grid -column属性是grid-column-start和grid-column-end的合并写法，grid-row是grid-row-start和grid-row-end的合并写法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">.item-1 &#123;</span><br><span class="line">  grid-column: 1 &#x2F; 3;</span><br><span class="line">  grid-row: 1 &#x2F; 2;</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;* 等同于 *&#x2F;</span><br><span class="line">.item-1 &#123;</span><br><span class="line">  grid-column-start: 1;</span><br><span class="line">  grid-column-end: 3;</span><br><span class="line">  grid-row-start: 1;</span><br><span class="line">  grid-row-end: 2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C%5C9A8HIF09@6%60" alt="img">)V`7A8EL87X2.png)</p>
+<p>这两个属性也可以使用span关键字，表示跨越多少个网格</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">.item-1 &#123;</span><br><span class="line">  background: #b03532;</span><br><span class="line">  grid-column: 1 &#x2F; 3;</span><br><span class="line">  grid-row: 1 &#x2F; 3;</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;* 等同于 *&#x2F;</span><br><span class="line">.item-1 &#123;</span><br><span class="line">  background: #b03532;</span><br><span class="line">  grid-column: 1 &#x2F; span 2;</span><br><span class="line">  grid-row: 1 &#x2F; span 2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>斜杠及后面的部分可以被省略，默认跨越一个网格</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.item-1 &#123;</span><br><span class="line">  grid-column: 1;</span><br><span class="line">  grid-row: 1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="file:///D:%5C%E8%85%BE%E8%AE%AFQQ%5C2545793432%5CImage%5CC2C)$%YKROU9ZOU%5BB21I%60%7DN(ZY.png" alt="img"></p>
+<p>以上便是HTML的一些基础操作</p>
+<p>还可以写出动态效果   3D效果   动画等</p>
+<p>用这些就可以实现HTML写md文件的blog</p>
+<p>按住ctrl与？便可以用HTML编写了</p>
+
+    </article>
+    <!-- license  -->
+    
+        <div class="license-wrapper">
+            <p>Author：<a href="https://said-what-sakula.github.io">Sakula</a>
+            <p>原文链接：<a href="https://said-what-sakula.github.io/2020/04/10/HTML%E5%86%99md%E6%96%87%E4%BB%B6/">https://said-what-sakula.github.io/2020/04/10/HTML%E5%86%99md%E6%96%87%E4%BB%B6/</a>
+            <p>发表日期：<a href="https://said-what-sakula.github.io/2020/04/10/HTML%E5%86%99md%E6%96%87%E4%BB%B6/">April 10th 2020, 9:19:09 pm</a>
+            <p>更新日期：<a href="https://said-what-sakula.github.io/2020/04/10/HTML%E5%86%99md%E6%96%87%E4%BB%B6/">April 10th 2020, 9:18:43 pm</a>
+            <p>版权声明：本文采用<a rel="license noopener" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
+    
+    <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2020/04/09/js%E5%AE%9E%E7%8E%B0%E8%BD%AE%E6%92%AD%E5%9B%BE/" title= "js实现轮播图">
+                    <div class="prevTitle">js实现轮播图</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
+    
+    
+    <!-- gitalk评论 -->
+
+    <!-- utteranc评论 -->
+
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
+</main>
+            <!-- profile -->
+            
+        </div>
+        <footer class="footer footer-unloaded">
+    <!-- social  -->
+    
+    <div class="social">
+        
+    
+        
+            
+                <a href="mailto:2545793432@qq.com" class="iconfont-archer email" title=email ></a>
+            
+        
+    
+        
+            
+                <a href="//github.com/said-what-sakula" class="iconfont-archer github" target="_blank" title=github></a>
+            
+        
+    
+        
+            
+                <span class="iconfont-archer wechat" title=wechat>
+                  
+                  <img class="profile-qr" src="/assets/wx.png" />
+                </span>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    </div>
+    
+    <!-- powered by Hexo  -->
+    <div class="copyright">
+        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span><span class="iconfont-archer power">&#xe635;</span><span id="theme-info">theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">Archer</a></span>
+    </div>
+    <!-- 不蒜子  -->
+    
+    <div class="busuanzi-container">
+    
+     
+    <span id="busuanzi_container_site_pv">PV: <span id="busuanzi_value_site_pv"></span> :)</span>
+    
+    </div>
+    
+</footer>
+    </div>
+    <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#利用HTML写GitHub"><span class="toc-number">1.</span> <span class="toc-text">利用HTML写GitHub</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#"><span class="toc-number"></span> <span class="toc-text"></span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.</span> <span class="toc-text"></span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#flex布局"><span class="toc-number">2.</span> <span class="toc-text">flex布局</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#grid布局"><span class="toc-number">3.</span> <span class="toc-text">grid布局</span></a></li></ol>
+    </div>
+    
+    <div class="back-top iconfont-archer">&#xe639;</div>
+    <div class="sidebar sidebar-hide">
+    <ul class="sidebar-tabs sidebar-tabs-active-0">
+        <li class="sidebar-tab-archives"><span class="iconfont-archer">&#xe67d;</span><span class="tab-name">Archive</span></li>
+        <li class="sidebar-tab-tags"><span class="iconfont-archer">&#xe61b;</span><span class="tab-name">Tag</span></li>
+        <li class="sidebar-tab-categories"><span class="iconfont-archer">&#xe666;</span><span class="tab-name">Cate</span></li>
+    </ul>
+    <div class="sidebar-content sidebar-content-show-archive">
+          <div class="sidebar-panel-archives">
+    <!-- 在ejs中将archive按照时间排序 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="total-and-search">
+        <div class="total-archive">
+        Total : 5
+        </div>
+        <!-- search  -->
+        
+    </div>
+    
+    <div class="post-archive">
+    
+    
+    
+    
+    <div class="archive-year"> 2020 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/07</span><a class="archive-post-title" href= "/2020/04/07/Hello/" >Hello</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> Invalid date </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">Invalid date</span><a class="archive-post-title" href= "/2020/04/10/HTML%E5%86%99md%E6%96%87%E4%BB%B6/" >HTML写md文件</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> Invalid date </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">Invalid date</span><a class="archive-post-title" href= "/2020/04/09/js%E5%AE%9E%E7%8E%B0%E8%BD%AE%E6%92%AD%E5%9B%BE/" >js实现轮播图</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> Invalid date </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">Invalid date</span><a class="archive-post-title" href= "/2020/04/07/%E9%9D%92%E5%B9%B4%E5%A4%A7%E5%AD%A6%E4%B9%A0/" >青年大学习</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2020 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">04/07</span><a class="archive-post-title" href= "/2020/04/07/%E7%8E%A9%E8%BD%AC%E8%85%BE%E8%AE%AF%E8%AF%BE%E5%A0%82/" >玩转腾讯课堂</a>
+        </li>
+    
+    </div>
+  </div>
+        <div class="sidebar-panel-tags">
+    <div class="sidebar-tags-name">
+    
+    </div>
+    <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
+    <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
+    缺失模块。<br/>
+    1、请确保node版本大于6.2<br/>
+    2、在博客根目录（注意不是archer根目录）执行以下命令：<br/>
+    <span style="color: #f75357; font-size: 1rem; line-height: 2rem;">npm i hexo-generator-json-content --save</span><br/>
+    3、在根目录_config.yml里添加配置：
+    <pre style="color: #787878; font-size: 0.6rem;">
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: true
+    tags: true</pre>
+    </div> 
+    <div class="sidebar-tags-list"></div>
+</div>
+        <div class="sidebar-panel-categories">
+    <div class="sidebar-categories-name">
+    
+    </div>
+    <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
+    <div class="sidebar-categories-list"></div>
+</div>
+    </div>
+</div> 
+    <script>
+    var siteMeta = {
+        root: "/",
+        author: "Sakula"
+    }
+</script>
+    <!-- CDN failover -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+        if (typeof window.$ === 'undefined')
+        {
+            console.warn('jquery load from jsdelivr failed, will load local script')
+            document.write('<script src="/lib/jquery.min.js">\x3C/script>')
+        }
+    </script>
+    <script src="/scripts/main.js"></script>
+    <!-- algolia -->
+    
+    <!-- busuanzi  -->
+    
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    <!-- CNZZ  -->
+    
+    </div>
+    <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
+     
+    </body>
+</html>
+
+
